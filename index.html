@@ -7,39 +7,25 @@
   </head>
 
   <body>
-    <p>
-      This example requires you to enter commands in your browser's JavaScript
-      console (see
-      <a
-        href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools"
-        >What are browser developer tools</a
-      >
-      for more information).
-    </p>
-
+   <h1>Objetos JavaScript</h1>
+   <p>Um objeto JavaScript é uma coleção de propriedades, e uma propriedade é uma associação entre nome (ou chave) e um valor. O valor de uma propriedade pode ser uma função, que é então considerada um método do objeto.</p>
+   <p>Os objetos JavaScript são usados para armazenar dados e funcionalidades relacionadas. Eles podem ser criados usando a sintaxe de objeto literal, a função construtora ou a classe.</p>
+   
+   <p>Exemplo de objeto literal:</p>
+   <pre><code>const pessoa = {
+    nome: "João",
+    idade: 30,
+    saudacao: function () {
+        console.log("Olá, meu nome é "+ this.nome0);
+    }
+   };</code></pre>
     <script>
-      var pessoa = {
-        nome: ["Bob", "Smith"],
-        idade: 32,
-        sexo: "masculino",
-        interesses: ["música", "esquiar"],
-        bio: function () {
-          alert(
-            this.nome[0] +
-              " " +
-              this.nome[1] +
-              " tem " +
-              this.idade +
-              " anos de idade. Ele gosta de " +
-              this.interesses[0] +
-              " e " +
-              this.interesses[1] +
-              ".",
-          );
-        },
+      const pessoa = {
+        nome: "João",
+        idade: 30,
         saudacao: function () {
-          alert("Oi! Eu sou " + this.nome[0] + ".");
-        },
+          console.log("Olá, meu nome é " + this.nome);
+        }
       };
     </script>
   </body>
