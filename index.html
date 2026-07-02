@@ -41,6 +41,24 @@
           alert("Oi! Eu sou " + this.nome[0] + ".");
         },
       };
+    var produto = {
+        nome: "Camiseta",
+        preco: 19.99,
+        descricao: "Uma camiseta confortável e elegante.",
+        estoque: 100,
+        detalhes: function () {
+          alert(
+            "Produto: " +
+              this.nome +
+              "\nPreço: $" +
+              this.preco +
+              "\nDescrição: " +
+              this.descricao +
+              "\nEstoque disponível: " +
+              this.estoque,
+          );
+        },
+      };
     </script>
   </body>
 </html>
